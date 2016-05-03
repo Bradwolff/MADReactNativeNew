@@ -9,6 +9,7 @@ var WifiClass = require('./Wifi.ios');
 var {DeviceEventEmitter} = React;
 var bluetooth = "unknown";
 require('react-native-bluetooth-state');
+var BlueToothList = require('./BluetoothSerial.ios');
 
 var {
   AppRegistry,
@@ -51,6 +52,9 @@ class Actuators extends Component {
             onPress={this.navToCamera.bind(this)}>
             <Text style={styles.buttonText}>Camera</Text>
           </TouchableHighlight>
+          <TouchableHighlight style={styles.notAvailableButton} >
+            <Text style={styles.notAvailableText}>WiFi</Text>
+          </TouchableHighlight>
       </View>
     );
   }
@@ -68,6 +72,15 @@ class Actuators extends Component {
       component: BlueTooth
     })
   }
+
+  navToBluetoothList(){
+    this.props.navigator.push({
+      title: '',
+      component: BlueToothList
+    })
+
+  }
+
   vibrate(){
     VibrationIOS.vibrate();
   }
@@ -92,6 +105,20 @@ var styles = StyleSheet.create({
     backgroundColor: '#48BBEC',
     alignSelf: 'stretch',
     justifyContent: 'center'
+  },
+  notAvailableButton:{
+    height: 44,
+    flexDirection: 'row',
+    backgroundColor: '#FF0000',
+    alignSelf: 'stretch',
+    justifyContent: 'center',
+
+  },
+  notAvailableText:{
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: 'white',
+    alignSelf: 'center'
   }
 });
 

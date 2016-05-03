@@ -120,6 +120,8 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-datetime')
+    compile project(':react-native-bluetooth-serial')
     compile project(':react-native-wifi-checker')
     compile project(':react-native-maps')
     compile project(':react-native-image-picker')

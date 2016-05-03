@@ -3,7 +3,13 @@
 var React = require('react-native');
 var Maps = require('./Maps');
 var ActivityIndicatorClass = require('./ActivityIndicator');
+var NavigatorView = require('./NavigatorView.ios');
+var TableViewMain = require('./TableViewMain.ios');
+var SearchBar = require('./SearchBar.ios');
+var DatePicker = require('./DatePicker.ios');
 var {DeviceEventEmitter} = React;
+
+
 
 var {
   AppRegistry,
@@ -51,8 +57,59 @@ class UserInterface extends Component {
             onPress={this.navToMaps.bind(this)}>
             <Text style={styles.buttonText}>Maps</Text>
           </TouchableHighlight>
+          <TouchableHighlight style={styles.button}
+            onPress={this.navigatorView.bind(this)}>
+            <Text style={styles.buttonText}>Navigator View</Text>
+          </TouchableHighlight>
+          <TouchableHighlight style={styles.button}
+            onPress={this.tableView.bind(this)}>
+            <Text style={styles.buttonText}>Table View</Text>
+          </TouchableHighlight>
+          <TouchableHighlight style={styles.button}
+            onPress={this.navToSearchBar.bind(this)}>
+            <Text style={styles.buttonText}>Search Bar</Text>
+          </TouchableHighlight>
+          <TouchableHighlight style={styles.button}
+            onPress={this.navToDatePicker.bind(this)}>
+            <Text style={styles.buttonText}>Date Picker</Text>
+          </TouchableHighlight>
+
       </View>
     );
+  }
+
+  tableView(){
+    this.props.navigator.push({
+      title: '',
+      component: TableViewMain,
+    })
+
+  }
+
+  navToSearchBar(){
+    this.props.navigator.push({
+      title: '',
+      component: SearchBar,
+    })
+
+  }
+
+  navToDatePicker(){
+    this.props.navigator.push({
+      title: '',
+      component: DatePicker,
+    })
+
+  }
+
+  navigatorView(){
+    this.props.navigator.push({
+      title: 'Some Menu',
+      titleTextColor: '#48BBEC',
+      leftButtonTitle:'UserInterface',
+      onLeftButtonPress: () => this.props.navigator.pop(),
+      component: NavigatorView,
+    })
   }
 
   navToActivityIndicator(){

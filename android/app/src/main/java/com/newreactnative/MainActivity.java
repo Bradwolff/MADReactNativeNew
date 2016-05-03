@@ -1,6 +1,8 @@
 package com.newreactnative;
 
 import com.facebook.react.ReactActivity;
+import com.keyee.datetime.RCTDateTimePickerPackage;
+import com.rusel.RCTBluetoothSerial.RCTBluetoothSerialPackage;
 import com.rayglaeske.react.wifi.WifiCheckerPackage;
 import com.AirMaps.AirPackage;
 import com.imagepicker.ImagePickerPackage;
@@ -39,6 +41,8 @@ public class MainActivity extends ReactActivity {
     protected List<ReactPackage> getPackages() {
         return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
+            new RCTDateTimePickerPackage(),
+            new RCTBluetoothSerialPackage(),
             new WifiCheckerPackage(),
             new AirPackage(),
             new ImagePickerPackage(),

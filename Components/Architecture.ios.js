@@ -54,18 +54,12 @@ class UserInterface extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableHighlight style={styles.button}
-            onPress={this.showAlert}>
-            <Text style={styles.buttonText}>Alert IOS</Text>
-          </TouchableHighlight>
-          <TouchableHighlight style={styles.button}
-            onPress={this.pickImage}>
-            <Text style={styles.buttonText}>Image Picker</Text>
-          </TouchableHighlight>
-          <TouchableHighlight style={styles.button}
-            onPress={this.navToActivityIndicator.bind(this)}>
-            <Text style={styles.buttonText}>Activity Indicator</Text>
-          </TouchableHighlight>
+      <TouchableHighlight style={styles.notAvailableButton} >
+        <Text style={styles.notAvailableText}>HealthKit</Text>
+      </TouchableHighlight>
+      <TouchableHighlight style={styles.notAvailableButton} >
+        <Text style={styles.notAvailableText}>CoreData</Text>
+      </TouchableHighlight>
       </View>
     );
   }
@@ -138,6 +132,20 @@ var styles = StyleSheet.create({
     backgroundColor: '#48BBEC',
     alignSelf: 'stretch',
     justifyContent: 'center'
+  },
+  notAvailableButton:{
+    height: 44,
+    flexDirection: 'row',
+    backgroundColor: '#FF0000',
+    alignSelf: 'stretch',
+    justifyContent: 'center',
+
+  },
+  notAvailableText:{
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: 'white',
+    alignSelf: 'center'
   }
 });
 

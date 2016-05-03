@@ -101,4 +101,4 @@ var NewReactNative = React.createClass({
 });
 
 
-AppRegistry.registerComponent('NewReactNative', () => NewReactNative);
+React.AppRegistry.registerComponent('NewReactNative', () => NewReactNative);

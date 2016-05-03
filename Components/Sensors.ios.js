@@ -70,6 +70,15 @@ class Sensors extends Component {
             onPress={this.useTouchId}>
             <Text style={styles.buttonText}>TouchID</Text>
           </TouchableHighlight>
+          <TouchableHighlight style={styles.notAvailableButton} >
+            <Text style={styles.notAvailableText}>Proximity Sensor</Text>
+          </TouchableHighlight>
+          <TouchableHighlight style={styles.notAvailableButton} >
+            <Text style={styles.notAvailableText}>Ambient Light</Text>
+          </TouchableHighlight>
+          <TouchableHighlight style={styles.notAvailableButton} >
+            <Text style={styles.notAvailableText}>Moisture Sensor</Text>
+          </TouchableHighlight>
           <Text style={styles.text} numberOfLines={3}>
             { this.state.dataX + '\n'}
             { this.state.dataY + '\n'}
@@ -208,7 +217,22 @@ var styles = StyleSheet.create({
   },
   text:{
     color: '#FFFFFF'
+  },
+  notAvailableButton:{
+    height: 44,
+    flexDirection: 'row',
+    backgroundColor: '#FF0000',
+    alignSelf: 'stretch',
+    justifyContent: 'center',
+
+  },
+  notAvailableText:{
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: 'white',
+    alignSelf: 'center'
   }
+
 });
 
 module.exports = Sensors

@@ -21,12 +21,17 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		3DAAF7CB9CEF431BBE0184FD /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC4CB4DA5754930A2AB8A45 /* libAirMaps.a */; };
+		5A76ED48462D4DB9968BF7FF /* libRNTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F42B7F6A784A4FD09516C924 /* libRNTableView.a */; };
+		66C6DC9E42434A92B5BD159E /* libRCTBluetoothSerial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 375535F45A3A4C219E1A4DCE /* libRCTBluetoothSerial.a */; };
 		736B4500CAD24B8A95F6B630 /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26709850CE3945E0B14ED77A /* libRCTCamera.a */; };
 		827DFB56424040E19960DF93 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E094D3AB3B440CB8EB2FEE /* libRNImagePicker.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		897AF8410D4A4EFB882F0949 /* libRNSearchBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 166353FC057D4858893C7E41 /* libRNSearchBar.a */; };
 		A82BAE9D07E74A7195479401 /* libRNBluetoothState.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C88BBDF8FF9F471680954B22 /* libRNBluetoothState.a */; };
 		BDD88E7C9009470493AFE79A /* libRNMotionManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA41E0035041CA997936A7 /* libRNMotionManager.a */; };
 		D06AE079131B4FC2A4D32D72 /* libTouchID.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AABC852B474BDEB23E0ED8 /* libTouchID.a */; };
+		F2B0378A1CCBDD6D005F5A7E /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B037881CCBDD6D005F5A7E /* countries.json */; };
+		F2B0378B1CCBDD6D005F5A7E /* states.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B037891CCBDD6D005F5A7E /* states.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +112,27 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		F251D7F71CD8B6ED009AF439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2BECF1BCCB54AED9E7B3E8F /* RNSearchBar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNSearchBar;
+		};
+		F2B037851CCBCEC6005F5A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DEB005A686A425E9D1BE423 /* RNTableView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 873769951B7CD6E900F7C3C2;
+			remoteInfo = RNTableView;
+		};
+		F2B037A21CCD09B6005F5A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C2C96E9D92741AFAA2D3940 /* RCTBluetoothSerial.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 69CA06031CC43C2900AF6479;
+			remoteInfo = RCTBluetoothSerial;
+		};
 		F2F0D3DE1CC2AD28003F1A21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F0935E57456C4A959497A830 /* RNBluetoothState.xcodeproj */;
@@ -177,10 +203,14 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NewReactNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NewReactNative/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		166353FC057D4858893C7E41 /* libRNSearchBar.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSearchBar.a; sourceTree = "<group>"; };
 		26709850CE3945E0B14ED77A /* libRCTCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTCamera.a; sourceTree = "<group>"; };
+		375535F45A3A4C219E1A4DCE /* libRCTBluetoothSerial.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTBluetoothSerial.a; sourceTree = "<group>"; };
 		4E250A23FFC7463EA375D885 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
 		58AABC852B474BDEB23E0ED8 /* libTouchID.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libTouchID.a; sourceTree = "<group>"; };
+		6DEB005A686A425E9D1BE423 /* RNTableView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNTableView.xcodeproj; path = "../node_modules/react-native-tableview/RNTableView.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7C2C96E9D92741AFAA2D3940 /* RCTBluetoothSerial.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTBluetoothSerial.xcodeproj; path = "../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9CFA41E0035041CA997936A7 /* libRNMotionManager.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNMotionManager.a; sourceTree = "<group>"; };
 		A7E094D3AB3B440CB8EB2FEE /* libRNImagePicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNImagePicker.a; sourceTree = "<group>"; };
@@ -188,8 +218,12 @@
 		CC701331373B48A09D54AC7B /* RNMotionManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNMotionManager.xcodeproj; path = "../node_modules/react-native-motion-manager/RNMotionManager.xcodeproj"; sourceTree = "<group>"; };
 		D62BB651E98D4AA9B7B9495D /* AirMaps.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
 		DAC4CB4DA5754930A2AB8A45 /* libAirMaps.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAirMaps.a; sourceTree = "<group>"; };
+		E2BECF1BCCB54AED9E7B3E8F /* RNSearchBar.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSearchBar.xcodeproj; path = "../node_modules/react-native-search-bar/RNSearchBar.xcodeproj"; sourceTree = "<group>"; };
 		EF542D0404E84C5FB13A8116 /* TouchID.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = TouchID.xcodeproj; path = "../node_modules/react-native-touch-id/TouchID.xcodeproj"; sourceTree = "<group>"; };
 		F0935E57456C4A959497A830 /* RNBluetoothState.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNBluetoothState.xcodeproj; path = "../node_modules/react-native-bluetooth-state/RNBluetoothState.xcodeproj"; sourceTree = "<group>"; };
+		F2B037881CCBDD6D005F5A7E /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		F2B037891CCBDD6D005F5A7E /* states.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = states.json; sourceTree = "<group>"; };
+		F42B7F6A784A4FD09516C924 /* libRNTableView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNTableView.a; sourceTree = "<group>"; };
 		FCC62B1F46B74E279019121D /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +255,9 @@
 				3DAAF7CB9CEF431BBE0184FD /* libAirMaps.a in Frameworks */,
 				BDD88E7C9009470493AFE79A /* libRNMotionManager.a in Frameworks */,
 				D06AE079131B4FC2A4D32D72 /* libTouchID.a in Frameworks */,
+				5A76ED48462D4DB9968BF7FF /* libRNTableView.a in Frameworks */,
+				66C6DC9E42434A92B5BD159E /* libRCTBluetoothSerial.a in Frameworks */,
+				897AF8410D4A4EFB882F0949 /* libRNSearchBar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +340,8 @@
 		13B07FAE1A68108700A75B9A /* NewReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				F2B037881CCBDD6D005F5A7E /* countries.json */,
+				F2B037891CCBDD6D005F5A7E /* states.json */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -348,6 +387,9 @@
 				D62BB651E98D4AA9B7B9495D /* AirMaps.xcodeproj */,
 				CC701331373B48A09D54AC7B /* RNMotionManager.xcodeproj */,
 				EF542D0404E84C5FB13A8116 /* TouchID.xcodeproj */,
+				6DEB005A686A425E9D1BE423 /* RNTableView.xcodeproj */,
+				7C2C96E9D92741AFAA2D3940 /* RCTBluetoothSerial.xcodeproj */,
+				E2BECF1BCCB54AED9E7B3E8F /* RNSearchBar.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -377,6 +419,30 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* NewReactNative.app */,
 				00E356EE1AD99517003FC87E /* NewReactNativeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F251D7E31CD8B6ED009AF439 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F251D7F81CD8B6ED009AF439 /* libRNSearchBar.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2B037721CCBCEC6005F5A7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2B037861CCBCEC6005F5A7E /* libRNTableView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2B0379D1CCD09B6005F5A7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2B037A31CCD09B6005F5A7E /* libRCTBluetoothSerial.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -508,6 +574,10 @@
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
 				{
+					ProductGroup = F2B0379D1CCD09B6005F5A7E /* Products */;
+					ProjectRef = 7C2C96E9D92741AFAA2D3940 /* RCTBluetoothSerial.xcodeproj */;
+				},
+				{
 					ProductGroup = F2F0D3FB1CC2AE71003F1A21 /* Products */;
 					ProjectRef = FCC62B1F46B74E279019121D /* RCTCamera.xcodeproj */;
 				},
@@ -558,6 +628,14 @@
 				{
 					ProductGroup = F2F0D41F1CC2AEC0003F1A21 /* Products */;
 					ProjectRef = CC701331373B48A09D54AC7B /* RNMotionManager.xcodeproj */;
+				},
+				{
+					ProductGroup = F251D7E31CD8B6ED009AF439 /* Products */;
+					ProjectRef = E2BECF1BCCB54AED9E7B3E8F /* RNSearchBar.xcodeproj */;
+				},
+				{
+					ProductGroup = F2B037721CCBCEC6005F5A7E /* Products */;
+					ProjectRef = 6DEB005A686A425E9D1BE423 /* RNTableView.xcodeproj */;
 				},
 				{
 					ProductGroup = F2F0D4271CC2AEC1003F1A21 /* Products */;
@@ -643,6 +721,27 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		F251D7F81CD8B6ED009AF439 /* libRNSearchBar.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSearchBar.a;
+			remoteRef = F251D7F71CD8B6ED009AF439 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2B037861CCBCEC6005F5A7E /* libRNTableView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNTableView.a;
+			remoteRef = F2B037851CCBCEC6005F5A7E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2B037A31CCD09B6005F5A7E /* libRCTBluetoothSerial.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTBluetoothSerial.a;
+			remoteRef = F2B037A21CCD09B6005F5A7E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		F2F0D3DF1CC2AD28003F1A21 /* libRNBluetoothState.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -706,7 +805,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B0378A1CCBDD6D005F5A7E /* countries.json in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				F2B0378B1CCBDD6D005F5A7E /* states.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,6 +882,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewReactNative.app/NewReactNative";
@@ -801,6 +905,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -831,6 +938,9 @@
 					"$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps/**",
 					"$(SRCROOT)/../node_modules/react-native-motion-manager/RNMotionManager/**",
 					"$(SRCROOT)/../node_modules/react-native-touch-id",
+					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
+					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
+					"$(SRCROOT)/../node_modules/react-native-search-bar/**",
 				);
 				INFOPLIST_FILE = NewReactNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -857,6 +967,9 @@
 					"$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps/**",
 					"$(SRCROOT)/../node_modules/react-native-motion-manager/RNMotionManager/**",
 					"$(SRCROOT)/../node_modules/react-native-touch-id",
+					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
+					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
+					"$(SRCROOT)/../node_modules/react-native-search-bar/**",
 				);
 				INFOPLIST_FILE = NewReactNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -910,6 +1023,9 @@
 					"$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps/**",
 					"$(SRCROOT)/../node_modules/react-native-motion-manager/RNMotionManager/**",
 					"$(SRCROOT)/../node_modules/react-native-touch-id",
+					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
+					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
+					"$(SRCROOT)/../node_modules/react-native-search-bar/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -956,6 +1072,9 @@
 					"$(SRCROOT)/../node_modules/react-native-maps/ios/AirMaps/**",
 					"$(SRCROOT)/../node_modules/react-native-motion-manager/RNMotionManager/**",
 					"$(SRCROOT)/../node_modules/react-native-touch-id",
+					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
+					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
+					"$(SRCROOT)/../node_modules/react-native-search-bar/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
