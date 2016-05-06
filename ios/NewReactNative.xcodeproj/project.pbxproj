@@ -23,6 +23,7 @@
 		3DAAF7CB9CEF431BBE0184FD /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC4CB4DA5754930A2AB8A45 /* libAirMaps.a */; };
 		5A76ED48462D4DB9968BF7FF /* libRNTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F42B7F6A784A4FD09516C924 /* libRNTableView.a */; };
 		66C6DC9E42434A92B5BD159E /* libRCTBluetoothSerial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 375535F45A3A4C219E1A4DCE /* libRCTBluetoothSerial.a */; };
+		68A1F5FDE432480E8C9ED43C /* libActivityView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B76ACA9233BF4314A6246D90 /* libActivityView.a */; };
 		736B4500CAD24B8A95F6B630 /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26709850CE3945E0B14ED77A /* libRCTCamera.a */; };
 		827DFB56424040E19960DF93 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E094D3AB3B440CB8EB2FEE /* libRNImagePicker.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -30,6 +31,7 @@
 		A82BAE9D07E74A7195479401 /* libRNBluetoothState.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C88BBDF8FF9F471680954B22 /* libRNBluetoothState.a */; };
 		BDD88E7C9009470493AFE79A /* libRNMotionManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA41E0035041CA997936A7 /* libRNMotionManager.a */; };
 		D06AE079131B4FC2A4D32D72 /* libTouchID.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AABC852B474BDEB23E0ED8 /* libTouchID.a */; };
+		DF231C10CE1E418F8755F8A7 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14719CDD854A48DD8095A533 /* libRCTActionSheet.a */; };
 		F2B0378A1CCBDD6D005F5A7E /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B037881CCBDD6D005F5A7E /* countries.json */; };
 		F2B0378B1CCBDD6D005F5A7E /* states.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B037891CCBDD6D005F5A7E /* states.json */; };
 /* End PBXBuildFile section */
@@ -119,6 +121,27 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNSearchBar;
 		};
+		F251D8271CDC8EAF009AF439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD3A75C09C7455CAD1E2127 /* RCTTextInputUtilsDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13B07F961A680F5B00A75B9A;
+			remoteInfo = RCTTextInputUtilsDemo;
+		};
+		F251D8291CDC8EAF009AF439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD3A75C09C7455CAD1E2127 /* RCTTextInputUtilsDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00E356EE1AD99517003FC87E;
+			remoteInfo = RCTTextInputUtilsDemoTests;
+		};
+		F251D8571CDC9ABA009AF439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D19964456D9445048436BC7E /* ActivityView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = ActivityView;
+		};
 		F2B037851CCBCEC6005F5A7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DEB005A686A425E9D1BE423 /* RNTableView.xcodeproj */;
@@ -203,9 +226,11 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NewReactNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NewReactNative/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		14719CDD854A48DD8095A533 /* libRCTActionSheet.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTActionSheet.a; sourceTree = "<group>"; };
 		166353FC057D4858893C7E41 /* libRNSearchBar.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSearchBar.a; sourceTree = "<group>"; };
 		26709850CE3945E0B14ED77A /* libRCTCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTCamera.a; sourceTree = "<group>"; };
 		375535F45A3A4C219E1A4DCE /* libRCTBluetoothSerial.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTBluetoothSerial.a; sourceTree = "<group>"; };
+		3AD3A75C09C7455CAD1E2127 /* RCTTextInputUtilsDemo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTTextInputUtilsDemo.xcodeproj; path = "../node_modules/react-native-textinput-utils/Demo/RCTTextInputUtilsDemo/ios/RCTTextInputUtilsDemo.xcodeproj"; sourceTree = "<group>"; };
 		4E250A23FFC7463EA375D885 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
 		58AABC852B474BDEB23E0ED8 /* libTouchID.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libTouchID.a; sourceTree = "<group>"; };
 		6DEB005A686A425E9D1BE423 /* RNTableView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNTableView.xcodeproj; path = "../node_modules/react-native-tableview/RNTableView.xcodeproj"; sourceTree = "<group>"; };
@@ -214,8 +239,10 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9CFA41E0035041CA997936A7 /* libRNMotionManager.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNMotionManager.a; sourceTree = "<group>"; };
 		A7E094D3AB3B440CB8EB2FEE /* libRNImagePicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNImagePicker.a; sourceTree = "<group>"; };
+		B76ACA9233BF4314A6246D90 /* libActivityView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libActivityView.a; sourceTree = "<group>"; };
 		C88BBDF8FF9F471680954B22 /* libRNBluetoothState.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNBluetoothState.a; sourceTree = "<group>"; };
 		CC701331373B48A09D54AC7B /* RNMotionManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNMotionManager.xcodeproj; path = "../node_modules/react-native-motion-manager/RNMotionManager.xcodeproj"; sourceTree = "<group>"; };
+		D19964456D9445048436BC7E /* ActivityView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ActivityView.xcodeproj; path = "../node_modules/react-native-activity-view/ActivityView.xcodeproj"; sourceTree = "<group>"; };
 		D62BB651E98D4AA9B7B9495D /* AirMaps.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
 		DAC4CB4DA5754930A2AB8A45 /* libAirMaps.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAirMaps.a; sourceTree = "<group>"; };
 		E2BECF1BCCB54AED9E7B3E8F /* RNSearchBar.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSearchBar.xcodeproj; path = "../node_modules/react-native-search-bar/RNSearchBar.xcodeproj"; sourceTree = "<group>"; };
@@ -258,6 +285,8 @@
 				5A76ED48462D4DB9968BF7FF /* libRNTableView.a in Frameworks */,
 				66C6DC9E42434A92B5BD159E /* libRCTBluetoothSerial.a in Frameworks */,
 				897AF8410D4A4EFB882F0949 /* libRNSearchBar.a in Frameworks */,
+				DF231C10CE1E418F8755F8A7 /* libRCTActionSheet.a in Frameworks */,
+				68A1F5FDE432480E8C9ED43C /* libActivityView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +419,8 @@
 				6DEB005A686A425E9D1BE423 /* RNTableView.xcodeproj */,
 				7C2C96E9D92741AFAA2D3940 /* RCTBluetoothSerial.xcodeproj */,
 				E2BECF1BCCB54AED9E7B3E8F /* RNSearchBar.xcodeproj */,
+				3AD3A75C09C7455CAD1E2127 /* RCTTextInputUtilsDemo.xcodeproj */,
+				D19964456D9445048436BC7E /* ActivityView.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -427,6 +458,23 @@
 			isa = PBXGroup;
 			children = (
 				F251D7F81CD8B6ED009AF439 /* libRNSearchBar.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F251D8191CDC8EAF009AF439 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F251D8281CDC8EAF009AF439 /* RCTTextInputUtilsDemo.app */,
+				F251D82A1CDC8EAF009AF439 /* RCTTextInputUtilsDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F251D8541CDC9ABA009AF439 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F251D8581CDC9ABA009AF439 /* libActivityView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -566,6 +614,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = F251D8541CDC9ABA009AF439 /* Products */;
+					ProjectRef = D19964456D9445048436BC7E /* ActivityView.xcodeproj */;
+				},
+				{
 					ProductGroup = F2F0D40D1CC2AEC0003F1A21 /* Products */;
 					ProjectRef = D62BB651E98D4AA9B7B9495D /* AirMaps.xcodeproj */;
 				},
@@ -604,6 +656,10 @@
 				{
 					ProductGroup = 832341B11AAA6A8300B99B32 /* Products */;
 					ProjectRef = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+				},
+				{
+					ProductGroup = F251D8191CDC8EAF009AF439 /* Products */;
+					ProjectRef = 3AD3A75C09C7455CAD1E2127 /* RCTTextInputUtilsDemo.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302E01ABCB9EE00DB3ED1 /* Products */;
@@ -726,6 +782,27 @@
 			fileType = archive.ar;
 			path = libRNSearchBar.a;
 			remoteRef = F251D7F71CD8B6ED009AF439 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F251D8281CDC8EAF009AF439 /* RCTTextInputUtilsDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RCTTextInputUtilsDemo.app;
+			remoteRef = F251D8271CDC8EAF009AF439 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F251D82A1CDC8EAF009AF439 /* RCTTextInputUtilsDemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RCTTextInputUtilsDemoTests.xctest;
+			remoteRef = F251D8291CDC8EAF009AF439 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F251D8581CDC9ABA009AF439 /* libActivityView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libActivityView.a;
+			remoteRef = F251D8571CDC9ABA009AF439 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		F2B037861CCBCEC6005F5A7E /* libRNTableView.a */ = {
@@ -885,6 +962,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewReactNative.app/NewReactNative";
@@ -905,6 +984,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -941,6 +1022,8 @@
 					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
 					"$(SRCROOT)/../node_modules/react-native-search-bar/**",
+					"$(SRCROOT)/../node_modules/react-native-textinput-utils/RCTTextInputUtils/**",
+					"$(SRCROOT)/../node_modules/react-native-activity-view",
 				);
 				INFOPLIST_FILE = NewReactNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -970,6 +1053,8 @@
 					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
 					"$(SRCROOT)/../node_modules/react-native-search-bar/**",
+					"$(SRCROOT)/../node_modules/react-native-textinput-utils/RCTTextInputUtils/**",
+					"$(SRCROOT)/../node_modules/react-native-activity-view",
 				);
 				INFOPLIST_FILE = NewReactNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1026,6 +1111,8 @@
 					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
 					"$(SRCROOT)/../node_modules/react-native-search-bar/**",
+					"$(SRCROOT)/../node_modules/react-native-textinput-utils/RCTTextInputUtils/**",
+					"$(SRCROOT)/../node_modules/react-native-activity-view",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1075,6 +1162,8 @@
 					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
 					"$(SRCROOT)/../node_modules/react-native-search-bar/**",
+					"$(SRCROOT)/../node_modules/react-native-textinput-utils/RCTTextInputUtils/**",
+					"$(SRCROOT)/../node_modules/react-native-activity-view",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;

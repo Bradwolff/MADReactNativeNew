@@ -7,9 +7,10 @@ var NavigatorView = require('./NavigatorView.ios');
 var TableViewMain = require('./TableViewMain.ios');
 var SearchBar = require('./SearchBar.ios');
 var DatePicker = require('./DatePicker.ios');
+var Toolbar = require('./Toolbar.ios');
+var ModalView = require('./ModalView.ios');
+var ActivityView = require('./ActivityView.ios');
 var {DeviceEventEmitter} = React;
-
-
 
 var {
   AppRegistry,
@@ -73,6 +74,17 @@ class UserInterface extends Component {
             onPress={this.navToDatePicker.bind(this)}>
             <Text style={styles.buttonText}>Date Picker</Text>
           </TouchableHighlight>
+          <TouchableHighlight style={styles.notAvailableButton}>
+            <Text style={styles.buttonText}>Toolbar</Text>
+          </TouchableHighlight>
+          <TouchableHighlight style={styles.button}
+            onPress={this.navToModalView.bind(this)}>
+            <Text style={styles.buttonText}>Modal View</Text>
+          </TouchableHighlight>
+          <TouchableHighlight style={styles.button}
+            onPress={this.navToActivityView.bind(this)}>
+            <Text style={styles.buttonText}>Activity View</Text>
+          </TouchableHighlight>
 
       </View>
     );
@@ -82,13 +94,46 @@ class UserInterface extends Component {
     this.props.navigator.push({
       title: '',
       component: TableViewMain,
+      onLeftButtonPress: () => this.props.navigator.pop(),
+      leftButtonTitle:'Back',
     })
 
+  }
+
+  navToActivityView(){
+
+    this.props.navigator.push({
+      title: '',
+      component: ActivityView,
+      onLeftButtonPress: () => this.props.navigator.pop(),
+      leftButtonTitle:'Back',
+    })
+  }
+
+  navToModalView(){
+    this.props.navigator.push({
+      title: '',
+      component: ModalView,
+      onLeftButtonPress: () => this.props.navigator.pop(),
+      leftButtonTitle:'Back',
+    })
+
+  }
+
+  navToToolbar(){
+    this.props.navigator.push({
+      title: '',
+      leftButtonTitle:'Back',
+      onLeftButtonPress: () => this.props.navigator.pop(),
+      component: Toolbar,
+    })
   }
 
   navToSearchBar(){
     this.props.navigator.push({
       title: '',
+      leftButtonTitle:'Back',
+      onLeftButtonPress: () => this.props.navigator.pop(),
       component: SearchBar,
     })
 
@@ -97,6 +142,8 @@ class UserInterface extends Component {
   navToDatePicker(){
     this.props.navigator.push({
       title: '',
+      leftButtonTitle:'Back',
+      onLeftButtonPress: () => this.props.navigator.pop(),
       component: DatePicker,
     })
 
@@ -115,6 +162,8 @@ class UserInterface extends Component {
   navToActivityIndicator(){
     this.props.navigator.push({
       title: '',
+      leftButtonTitle:'Back',
+      onLeftButtonPress: () => this.props.navigator.pop(),
       component: ActivityIndicatorClass,
     })
   }
@@ -122,6 +171,7 @@ class UserInterface extends Component {
   navToMaps(){
     this.props.navigator.push({
       title: '',
+      leftButtonTitle:'Back',
       component: Maps,
     })
   }
@@ -177,6 +227,14 @@ var styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     alignSelf: 'center'
+  },
+  notAvailableButton:{
+    height: 44,
+    flexDirection: 'row',
+    backgroundColor: '#FF0000',
+    alignSelf: 'stretch',
+    justifyContent: 'center',
+
   },
   button: {
     height: 44,
